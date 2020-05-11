@@ -1,0 +1,20 @@
+{
+  "name": "tail-admin",
+  "version": "1.0.0",
+  "description": "Admin template with tailwindcss and pure js",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build public/css/tailwind.css -o public/css/main.css"
+  },
+  "author": "wassimbj",
+  "license": "MIT",
+  "dependencies": {
+    "feather-icons": "^4.25.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0"
+  }
+}

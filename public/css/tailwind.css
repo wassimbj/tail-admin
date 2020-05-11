@@ -1,0 +1,206 @@
+/**
+* ##################################################################################################
+* This is the un-compiled css file
+* ##################################################################################################
+*/
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* ############### Global styles ################# */
+
+body{
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+.transition{
+    -webkit-transition: 250ms;
+    transition: 250ms
+}
+
+#main-content{
+    @apply p-5;
+}
+
+.min-w-100{min-width: 100px}
+.min-w-150{min-width: 150px}
+.min-w-200{min-width: 200px}
+.min-w-250{min-width: 250px}
+.min-w-300{min-width: 300px}
+.min-w-350{min-width: 350px}
+.min-w-400{min-width: 400px}
+.min-w-450{min-width: 450px}
+.min-w-500{min-width: 500px}
+
+
+/* ############## Nav bars (header & aside) ############## */
+
+.messages-dropdown{
+    left: -90%;
+    min-width: 255px;
+}
+
+.notification-dropdown{
+    left: -105px;
+    min-width: 255px;
+}
+.user-dropdown{
+    left: -20px;
+    min-width: 150px;
+}
+
+/* ---- Aside nav bar ---- */
+
+@media (max-width: 767px)
+{
+    .aside-nav{
+        width: 65%;
+        height: 100%;
+        left: -100%;
+        top: 57px;
+        transition: 400ms ease-in;
+        z-index: 9999;
+    }
+}
+
+.open-mobile-aside-nav{left: 0 !important}
+
+.side-link .link-icon{
+    height: 16px
+}
+
+.side-link:hover{
+    @apply bg-gray-200;
+    @apply rounded-full;
+    transition: 300ms;
+}
+
+.active-side-link{
+    @apply bg-gray-200;
+    @apply rounded-full;
+}
+
+
+/* aside scroll bar */
+.wrapper, .scroll-wrapper {
+    padding: 5px;
+}
+.scroll-wrapper.mac + .scrollBarContainer{
+    background-color: transparent;
+}
+.scrollBarContainer.animate .scroll{
+    transition: 2s opacity ease;
+    -ms-transition: 2s opacity ease;
+    opacity: 0;
+}
+.scrollBarContainer:hover .scroll{
+    opacity: 0.5;
+    transition: none;
+    -ms-transition: none;
+}
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* ###################### UI Kits ###################### */
+
+/* ------ Dropdowns ------ */
+.dropdown-wrapper{
+   position: relative;
+   cursor: pointer;
+   display: inline-block;
+}
+.dropdown{
+   top: 125%;
+   opacity: 0;
+   visibility: hidden;
+   right: auto;
+}
+
+.open-dropdown{
+   top: 100%;
+   opacity: 1;
+   visibility: visible;
+   transition: 250ms;
+}
+.up-open-dropdown {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: 250ms;
+    will-change: transform;
+    transform: translate3d(110px, -96px, 0px);
+}
+
+.right-open-dropdown {
+    top: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: 250ms;
+    will-change: transform;
+    transform: translate3d(140px, 0px, 0px);
+    right: 0;
+}
+/* -------- Collapses / Accordians ------- */
+.collapse-content{
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms;
+}
+
+/* -------- Breadcrumbs ------- */
+
+.step-item{position: relative}
+
+.step-item:not(:first-child)
+{
+    padding-left: 2rem;
+}
+
+.step-item::after,
+.step-item.active-step::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 0;
+    height: 100%;
+    border-width: 20px;
+    border-style: solid;
+    z-index: 2;
+}
+
+.step-item > .step-icon{
+    @apply text-black;
+    @apply opacity-50;
+    @apply inline-block;
+    @apply mr-1
+}
+
+.step-item::after{
+    border-color: transparent transparent transparent #e2e8f0;
+}
+
+.step-item.active-step{
+    @apply bg-blue-500;
+    color: #fff;
+}
+
+.step-item > .step-icon{
+    @apply text-white;
+    @apply opacity-50;
+    @apply inline-block;
+    @apply mr-1
+}
+.step-item.active-step::after {
+    border-color: transparent transparent transparent #4299e1;
+}

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,800&display=swap" rel="stylesheet">
+
+<!-- Css -->
+<link rel="stylesheet" href="../../public/css/main.css">
+
+<title> Dashboard </title>
+</head>
+
+<body class="bg-gray-200">
+
+<main class="grid grid-cols-6">
+
+    <!-- Aside nav bar -->
+    <aside class="bg-white overflow-hidden absolute md:relative md:col-span-1 aside-nav border-r border-gray-300">
+        <div class="p-5">
+    
+            <!-- MAIN -->
+            <ul>
+                <li class="side-title font-bold text-gray-500 text-sm"> MAIN </li>
+                <li class="mt-2">
+                    <a href="../../dashboard.html" class="block side-link p-2 active-side-link"> <i
+                            class="inline-block link-icon" data-feather="clock"></i> Dashboard </a>
+                </li>
+            </ul>
+    
+            <!-- PAGES -->
+            <ul class="mt-8">
+                <li class="side-title font-bold text-gray-500 text-sm"> PAGES </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="user"></i>
+                        Profile </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon"
+                            data-feather="message-square"></i> Chat </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="file-text"></i>
+                        Invoice </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon"
+                            data-feather="dollar-sign"></i> Pricing </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon"
+                            data-feather="help-circle"></i> FAQs </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="inbox"></i>
+                        Inbox </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="image"></i>
+                        Gallery </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="file"></i>
+                        Empty </a>
+                </li>
+            </ul>
+    
+            <!-- COMPONENTS -->
+            <ul class="mt-8">
+                <li class="side-title font-bold text-gray-500 text-sm"> COMPONENTS </li>
+                <li class="mt-2">
+                    <span data-collapse="uikits" class="block side-link p-2 collapse-btn cursor-pointer">
+                        <i class="inline-block link-icon" data-feather="grid"></i> UI Kits
+                        <i class="inline-block p-1 text-gray-700 float-right" data-feather="chevron-down"></i>
+                    </span>
+                    <!-- Collapse -->
+                    <div id='uikits' class="collapse-content">
+                        <ul class="ml-4 pl-2 mb-2 border-l-2 border-gray-400 text-sm">
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./alerts.html" class="nav-link">Alerts</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./badges.html" class="nav-link">Badges</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./breadcrumbs.html" class="nav-link">Breadcrumbs</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./buttons.html" class="nav-link">Buttons</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./cards.html" class="nav-link">Cards</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./dropdowns.html" class="nav-link">Dropdowns</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./widgets.html" class="nav-link">Widgets</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./modals.html" class="nav-link active">Modal</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./navs.html" class="nav-link">Navs</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./navbars.html" class="nav-link">Navbar</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./paginations.html" class="nav-link">Pagination</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./pogresses.html" class="nav-link">Progress</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./spinners.html" class="nav-link">Spinners</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="./popovers.html" class="nav-link">Tooltips & Popovers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mt-2">
+                    <span data-collapse="forms" class="block side-link p-2 collapse-btn cursor-pointer">
+                        <i class="inline-block link-icon" data-feather="clipboard"></i> Forms
+                        <i class="inline-block p-1 text-gray-700 float-right" data-feather="chevron-down"></i>
+                    </span>
+                    <!-- Collapse -->
+                    <div id='forms' class="collapse-content">
+                        <ul class="ml-4 pl-2 mb-2 border-l-2 border-gray-400 text-sm">
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Standard</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Form Layout</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Extended</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Editor</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Datepicker</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">File Upload</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Validation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="pie-chart"></i>
+                        Charts </a>
+                </li>
+                <li class="mt-2">
+                    <span data-collapse="tables" class="block side-link p-2 collapse-btn cursor-pointer">
+                        <i class="inline-block link-icon" data-feather="layout"></i> Tables
+                        <i class="inline-block p-1 text-gray-700 float-right" data-feather="chevron-down"></i>
+                    </span>
+                    <!-- Collapse -->
+                    <div id='tables' class="collapse-content">
+                        <ul class="ml-4 pl-2 mb-2 border-l-2 border-gray-400 text-sm">
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Standard</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Data Tables</a>
+                            </li>
+                            <li class="p-1 hover:text-gray-700 transition">
+                                <a href="#" class="nav-link">Extended</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    
+            <!-- AUTH -->
+            <ul class="mt-8">
+                <li class="side-title font-bold text-gray-500 text-sm"> AUTH </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon"
+                            data-feather="user-check"></i> Login </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="user-plus"></i>
+                        Register </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="key"></i>
+                        Forgot password </a>
+                </li>
+                <li class="mt-2">
+                    <a href="#" class="block side-link p-2"> <i class="inline-block link-icon" data-feather="x-octagon"></i>
+                        404 </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="col-span-6 md:col-span-5 main-content">
+
+        <!-- + Header -->
+        <header class="bg-white shadow py-1 px-3">
+            <nav class="flex justify-between items-center">
+                <div class="flex">
+                    <div id='aside-toggler' class="p-2 mr-2 bg-gray-200 cursor-pointer rounded transition hover:bg-gray-300">
+                        <i data-feather="menu"></i>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="relative text-gray-600">
+                            <button type="submit" class="absolute left-0 top-0 mt-2 mr-4">
+                                <i data-feather="search"></i>
+                            </button>
+                            <input type="search" name="serch" placeholder="Search"
+                                class="bg-white h-10 px-5 pl-10 text-sm focus:outline-none">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-end w-full">
+        
+                    <ul class="flex">
+                        <li class="m-3 relative dropdown-wrapper">
+                            <div data-dropdown="messages_dropdown" class="dropdown-toggler">
+                                <span
+                                    class="absolute flex rounded-full text-xs p-1 right-0 bg-green-500 text-white font-bold"></span>
+                                <i data-feather='message-square'></i>
+                            </div>
+        
+                            <!-- Messages Dropdown -->
+                            <div id="messages_dropdown"
+                                class="dropdown absolute mt-2 rounded shadow-lg bg-white messages-dropdown">
+                                <div>
+                                    <div class="border-b border-gray-200 p-2 bg-gray-100 w-full flex justify-between">
+                                        <span class="text-sm text-gray-600 font-semibold">5 New Messages</span>
+                                        <span class="text-sm text-gray-400 text-xs hover:text-gray-500"> Clear all
+                                        </span>
+                                    </div>
+                                    <div class="p-2">
+                                        <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNJ61Lvxp7krcjDCDW4XARBbsmrzsQZkUFqiBl3endwEPrybeh"
+                                                        alt="" class="rounded-full" width="35px">
+                                                    <div class="ml-2">
+                                                        <p class="text-sm"> Jackeline Grant </p>
+                                                        <p class="text-gray-600 text-xs"> Project updates </p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-sm text-gray-500"> 2min ago </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/gofrasdesign/128.jpg"
+                                                        alt="" class="rounded-full" width="35px">
+                                                    <div class="ml-2">
+                                                        <p class="text-sm"> Melody Schimmel </p>
+                                                        <p class="text-gray-600 text-xs"> Adding features </p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-sm text-gray-500"> 5h ago </span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                            <div class="flex justify-between">
+                                                <div class="flex items-center">
+                                                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/roybarberuk/128.jpg"
+                                                        alt="" class="rounded-full" width="35px">
+                                                    <div class="ml-2">
+                                                        <p class="text-sm"> Maryam Funk </p>
+                                                        <p class="text-gray-600 text-xs"> Client Meeting </p>
+                                                    </div>
+                                                </div>
+                                                <span class="text-sm text-gray-500"> 20sec ago </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="border-t border-gray-200 p-2 bg-gray-100 w-full">
+                                        <a href="#" class="block text-center bg-gray-100 text-blue-600 hover:text-blue-700">
+                                            View all </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="m-3 relative dropdown-wrapper">
+                            <div data-dropdown="notification_dropdown" class="dropdown-toggler">
+                                <span
+                                    class="absolute flex rounded-full text-xs p-1 right-0 bg-red-500 text-white font-bold"></span>
+                                <i data-feather='bell'></i>
+                            </div>
+        
+                            <!-- Notification Dropdown -->
+                            <div id='notification_dropdown'
+                                class="dropdown absolute mt-2 rounded shadow-lg bg-white notification-dropdown">
+                                <div class="border-b border-gray-200 p-2 bg-gray-100 w-full flex justify-between">
+                                    <span class="text-sm text-gray-600 font-semibold">5 New Notifications</span>
+                                </div>
+                                <div class="p-2">
+                                    <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                        <p class="text-sm"> New order placed </p>
+                                        <p class="text-gray-600 text-xs"> 5min ago </p>
+                                    </a>
+                                    <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                        <p class="text-sm"> New user registered </p>
+                                        <p class="text-gray-600 text-xs"> 5h ago </p>
+                                    </a>
+                                    <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                        <p class="text-sm"> Server limit reached </p>
+                                        <p class="text-gray-600 text-xs"> 2d ago </p>
+                                    </a>
+                                </div>
+                                <div class="border-t border-gray-200 p-2 bg-gray-100 w-full">
+                                    <a href="#" class="block text-center bg-gray-100 text-blue-600 hover:text-blue-700">
+                                        View all </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+        
+                    <div class="cursor-pointer flex items-center pl-2 border-l border-gray-200 dropdown-wrapper">
+                        <div data-dropdown="user_dropdown" class="dropdown-toggler">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKM9BUy0eVYn8_C3sg0J40Oa5MlWpFbS83fleauNdF4W5HQQJQ"
+                                alt="" class="rounded-full inline-block" width="40px">
+                            <span class="ml-2 mr-1 inline-block"> Christ Roob </span>
+                        </div>
+        
+                        <!-- User Dropdown -->
+                        <div id="user_dropdown" class="dropdown absolute mt-1 rounded shadow-lg bg-white user-dropdown">
+                            <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                <i data-feather='user' class="mr-2 inline-block bg-gray-200 p-1 rounded-full"></i>
+                                Profile
+                            </a>
+                            <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                <i data-feather='settings' class="mr-2 inline-block bg-gray-200 p-1 rounded-full"></i> Settings
+                            </a>
+                            <hr>
+                            <a href="#" class="block hover:bg-gray-200 p-2 transition">
+                                <i data-feather='log-out' class="mr-2 inline-block bg-gray-200 p-1 rounded-full"></i> Logout
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- - Header -->
+
+        <!-- Main content -->
+        <div id="main-content" aria-label="main-content">
+            <div class="mb-5">
+                <h1 class="text-4xl font-semibold"> Alerts </h1>
+                <p class="text-gray-500 mb-3">Feedback messages for typical user actions</p>
+                <hr>
+            </div>
+
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 p-2">
+                    <div class="p-2">
+                        <div class="shadow p-3 bg-white">
+                            <h1 class="text-lg text-gray-700 mb-5"> Traditional </h1>
+        
+                                <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative m-3" role="alert">
+                                    <strong class="font-bold">Holy smokes !</strong>
+                                    <span class="block sm:inline">Something seriously bad happened.</span>
+                                </div>
+        
+                                <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative m-3" role="alert">
+                                    <strong class="font-bold">Yayyy !</strong>
+                                    <span class="block sm:inline">Your account has been successfully created.</span>
+                                </div>
+                                <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative m-3" role="alert">
+                                    <strong class="font-bold">Hey !</strong>
+                                    <span class="block sm:inline">Admin sent you a message.</span>
+                                </div>
+                                <div class="bg-orange-100 border border-orange-400 text-orange-700 px-4 py-3 rounded relative m-3" role="alert">
+                                    <strong class="font-bold">Whoops !</strong>
+                                    <span class="block sm:inline">Please verify your email.</span>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <div class="shadow p-3 bg-white">
+                            <h1 class="text-lg text-gray-700 mb-5"> Top Accent Border </h1>
+                    
+                            <div class="m-3 bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow">
+                                <div class="flex">
+                                    <div class="py-1"><i class="text-teal-500 mr-4" data-feather="check-circle"></i></div>
+                                    <div>
+                                        <p class="font-bold">Thanks for caring</p>
+                                        <p class="text-sm">Your report has been recieved.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="m-3 bg-blue-100 border-t-4 border-blue-500 rounded-b text-blue-900 px-4 py-3 shadow">
+                                <div class="flex">
+                                    <div class="py-1"><i class="text-blue-500 mr-4" data-feather="info"></i></div>
+                                    <div>
+                                        <p class="font-bold">Our privacy policy has changed</p>
+                                        <p class="text-sm">Make sure you know how these changes affect you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="m-3 bg-red-100 border-t-4 border-red-500 rounded-b text-red-900 px-4 py-3 shadow">
+                                <div class="flex">
+                                    <div class="py-1"><i class="text-red-500 mr-4" data-feather="x-circle"></i></div>
+                                    <div>
+                                        <p class="font-bold">Something went wrong</p>
+                                        <p class="text-sm">Make sure you know how these changes affect you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2 p-2">
+                    <div class="p-2">
+                        <div class="shadow p-3 bg-white">
+                            <h1 class="text-lg text-gray-700 mb-5"> Titled </h1>
+                            
+                            <div class="m-3" role="alert">
+                                <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+                                    Danger
+                                </div>
+                                <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                    <p>Something not ideal might be happening.</p>
+                                </div>
+                            </div>
+
+                            <div class="m-3" role="alert">
+                                <div class="bg-teal-500 text-white font-bold rounded-t px-4 py-2">
+                                    Email has been sent
+                                </div>
+                                <div class="border border-t-0 border-teal-400 rounded-b bg-teal-100 px-4 py-3 text-teal-700">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nobis eius .</p>
+                                </div>
+                            </div>
+
+                            <div class="m-3" role="alert">
+                                <div class="bg-blue-500 text-white font-bold rounded-t px-4 py-2">
+                                    Something you need to know
+                                </div>
+                                <div class="border border-t-0 border-blue-400 rounded-b bg-blue-100 px-4 py-3 text-blue-700">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nobis eius .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-2">
+                        <div class="shadow p-3 bg-white">
+                            <h1 class="text-lg text-gray-700 mb-5"> Left Accent Border </h1>
+                            
+                            <div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 m-3" role="alert">
+                                <p>Something not ideal might be happening.</p>
+                            </div>
+
+                            <div class="bg-teal-100 border-l-4 border-teal-500 text-teal-700 p-4 m-3" role="alert">
+                                <p>Succes message will be displayed here.</p>
+                            </div>
+
+                            <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 m-3" role="alert">
+                                <p>Info message will be displayed here.</p>
+                            </div>
+
+                            <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 m-3" role="alert">
+                                <p>Info message will be displayed here.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Main content -->
+
+    </section>
+
+</main>
+
+
+
+<!-- Javascript -->
+<script src="../../public/js/animations.js"></script>
+<script src="../../public/js/libs/feather.min.js"></script>
+<script src="../../public/js/libs/slimScroll.min.js"></script>
+
+<!-- Initialize feather -->
+<script>
+    feather.replace();
+    // const myTable = document.querySelector("#myTable");
+    // const dataTable = new DataTable(myTable);
+    new slimScroll(document.querySelector('.aside-nav'), {
+        'wrapperClass': 'scroll-wrapper unselectable mac',
+        'scrollBarContainerClass': 'scrollBarContainer',
+        'scrollBarContainerSpecialClass': 'animate',
+        'scrollBarClass': 'scroll',
+        'keepFocus': true
+    })
+</script>
+
+</body>
+
+</html>
